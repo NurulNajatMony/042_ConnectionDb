@@ -15,7 +15,7 @@ const pool = new Pool({
 app.use (express.json());
 
 // Method GET untuk mengambil data dari tabel biodata
-app.get('/biodata', async (req, res) => {
+app.get('/biodataku', async (req, res) => {
     try {
         const result = await pool.query('SELECT * FROM biodata');
 
